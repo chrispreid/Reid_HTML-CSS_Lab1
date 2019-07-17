@@ -1,0 +1,112 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    background-color: #f9fafc;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+h1{
+    font-size: 95%;
+}
+
+nav{
+    width: 50%;
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+nav button{
+    margin-left: 5%;
+}
+
+
+main{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    top: 70px;
+
+}
+
+p{
+    width: 50%;
+    color: #69696a;
+}
+
+button{
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 45px;
+    font-size: 20px;
+}
+
+main{
+    float: left;
+    margin-left: 2%
+}
+
+section{
+    margin-right: 10px;
+}
+
+p{
+    width: 45%;
+    border: none;
+    border-left: 1px solid;
+    padding: 0 10px;
+}
+
+main button{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+div {
+    border-radius: 100%;
+}
+
+.pink {
+    padding: 15%;
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    z-index: 1;
+}
+
+.purple{
+    padding: 8%;
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 1%;
+    height: 1%;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    z-index: 2;  
+}
+
+.orange{
+    padding: 12%;
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 3%;
+    height: 1%;
+    position: absolute;
+    right: 10%;
+    bottom: 2%;
+    z-index: 3;  
+}
