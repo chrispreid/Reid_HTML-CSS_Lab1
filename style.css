@@ -1,112 +1,161 @@
 body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  background-color: #f9fafc;
+}
+
+h1{
+  font-size: 95%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 5px;
+}
+
+nav a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: #69696a;
+  margin-top: 5px;
+}
+
+
+button{
+ background-color: #000;
+ color: white;
+ width: 100%;
+ padding: 10px 20px;
+ border-radius: 45px;
+ font-size: 20px;
+ margin-top: 5%;
+}
+
+p{
+  color: #69696a;
+  border: none;
+  border-left: 1px solid;
+  padding: 0 10px;
+}
+
+main{
+  margin-top: 20px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     background-color: #f9fafc;
-}
+  }
 
-header{
+  header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-}
+  }
 
-h1{
+  h1{
     font-size: 95%;
-}
+  }
 
-nav{
-    width: 50%;
-}
+  nav{
+    width: 60%;
+    flex-direction: row;
+    flex: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-nav a{
+  nav a{
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    margin-left: 5%;
+    margin-left: 20px;
     text-decoration: none;
-}
+  }
 
-nav button{
-    margin-left: 5%;
-}
+  nav button{
+    margin-left: 10px;
+  }
 
-
-main{
+  main{
     height: 75vh;
     width: 100%;
     position: relative;
     top: 70px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 
-}
-
-p{
-    width: 50%;
+  p{
     color: #69696a;
-}
+    width: 38%;
+    border: none;
+    border-left: 1px solid;
+    padding: 0 10px;
+  }
 
-button{
+  button{
     background-color: #000;
     color: white;
     padding: 10px 20px;
     border-radius: 45px;
     font-size: 20px;
-}
+    width: auto;
+    margin-top: 0;
+  }
 
-main{
-    float: left;
-    margin-left: 2%
-}
-
-section{
+  section{
     margin-right: 10px;
-}
+  }
 
-p{
-    width: 45%;
-    border: none;
-    border-left: 1px solid;
-    padding: 0 10px;
-}
-
-main button{
+  main button{
     position: absolute;
-    bottom: 0;
-    left: 45%;
-}
+    bottom: 2%;
+    left: 45%;  
+  }
 
-div {
+  div {
     border-radius: 100%;
-}
+  }
 
-.pink {
+  .pink {
     padding: 15%;
     background-color: rgba(247, 136, 167, 0.6);
-    width: 3%;
+    width: 5%;
     height: 5%;
-    position: absolute;
-    right: 20%;
-    top: 10%;
+    position: fixed;
+    right: 15%;
+    top: 30%;
     z-index: 1;
-}
+  }
 
-.purple{
+  .purple{
     padding: 8%;
     background-color: rgba(207, 130, 213, 0.6);
     width: 1%;
     height: 1%;
-    position: absolute;
+    position: fixed;
     right: 10%;
-    top: 5%;
+    top: 30%;
     z-index: 2;  
-}
+  }
 
-.orange{
+  .orange{
     padding: 12%;
     background-color: rgba(247, 193, 162, 0.7);
-    width: 3%;
-    height: 1%;
-    position: absolute;
+    width: 2%;
+    height: 2%;
+    position: fixed;
     right: 10%;
-    bottom: 2%;
+    top: 50%;
     z-index: 3;  
+  }
 }
